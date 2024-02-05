@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -29,10 +30,6 @@ public class HomePage extends BasePage {
 
     public boolean isLogoDisplayed() {
         return logo.isDisplayed();
-    }
-
-    public void printLogoColor() {
-        System.out.println(logo.getCssValue("color"));
     }
 
     public String getLogoColor() {
